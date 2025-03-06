@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d8db0e;
+            text-align: center;
+        }
+        header {
+            background-color: #e07c09;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            background-color: #8d590c;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            font-size: 18px;
+        }
+        nav a:hover {
+            background-color: #d39309;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #e07c09;
+            color: white;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>Gestión de Alumnado</header>
+    <nav>
+        <a href="/index.html">Inicio</a>
+        <a href="/añadir.html">Añadir Alumnos</a>
+        <a href="/borrar.html">Borrar Alumnos</a>
+        <a href="/alumnos.html">Listar Alumnos</a>
+        <a href="/mejor_peor.html">Mejor y peor Alumno</a>
+        <a href="/actualizar.html">Actualizar Alumno</a>
+    </nav>
+
+    <main>
+        {{ content }}
+    </main>
+    <footer>
+        &copy; 2025 Gestión de Alumnado - Todos los derechos reservados
+    </footer>
+</body>
+</html>
